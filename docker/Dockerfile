@@ -82,7 +82,7 @@ RUN apt-get -y install \
     git
 
 # git clone GenomeChronicler 
-RUN git clone https://github.com/PGP-UK/GenomeChronicler.git && \
+RUN git clone https://github.com/lifebit-ai/GenomeChronicler.git && \
     cd GenomeChronicler && \
     bash SetupMeFirst.sh && \
     ln -sf GenomeChronicler_mainDruid.pl genomechronicler && \
