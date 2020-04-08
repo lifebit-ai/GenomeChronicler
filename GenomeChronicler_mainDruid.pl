@@ -330,14 +330,14 @@ sub runLatex {
 
 ##################### Clean up temp files, both in the results folder and in the potentially extraneous tables produced for the report
 
-print STDERR "\t +++ INFO: Cleaning up Temporary and Intermediate Files\n";
+# print STDERR "\t +++ INFO: Cleaning up Temporary and Intermediate Files\n";
 
-system("rm -rf $BAM_file ${BAM_file}.bai");
-system("rm -rf ${resultsdir}/results/results_${sample}/temp/");
-system("rm -rf ${resultsdir}/results/results_${sample}/latest*.csv");
-system("rm -rf ${resultsdir}/results/results_${sample}/versionTable.txt ${resultsdir}/results/results_${sample}/GeneStructure.pdf");
-system("rm -rf ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.out ${resultsdir}/results/results_${sample}/texput.log ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.aux ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.log ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.tex");
-system("rm -rf ${dir}/GenomeChronicler_plot_generator_fromAncestry.Rout");
+# system("rm -rf $BAM_file ${BAM_file}.bai");
+# system("rm -rf ${resultsdir}/results/results_${sample}/temp/");
+# system("rm -rf ${resultsdir}/results/results_${sample}/latest*.csv");
+# system("rm -rf ${resultsdir}/results/results_${sample}/versionTable.txt ${resultsdir}/results/results_${sample}/GeneStructure.pdf");
+# system("rm -rf ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.out ${resultsdir}/results/results_${sample}/texput.log ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.aux ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.log ${resultsdir}/results/results_${sample}/${TEMPLATETEX}.tex");
+# system("rm -rf ${dir}/GenomeChronicler_plot_generator_fromAncestry.Rout");
 
 sleep (1);
 
