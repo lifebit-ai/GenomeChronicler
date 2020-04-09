@@ -182,4 +182,9 @@ subplot(plot(zoom_data[, 3] + 0.5 * zoom_data[, 4] - 0.5 * zoom_data[, 5], sin(p
 
 dev.off()
 
+# Save all R objects
+save.image(file = "ancestry.RData")
+		
+
+
 
